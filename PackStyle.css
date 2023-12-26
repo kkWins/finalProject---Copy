@@ -18,12 +18,34 @@ body{
     background-color: teal;
     position: fixed;
     border-radius: 20px;
+    align-items: center;
+    justify-content: center;
 }
 .topbar h1{
     color: white;
     margin: 0;
-
 }
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    align-items: center;
+    font-size: 15px;
+}
+
+.tabs a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.tabs a:hover{
+    background-color: gray;
+}
+
 .content{
     width: 100%;
     height: 1000px;
