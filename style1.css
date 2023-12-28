@@ -43,6 +43,7 @@ ul li{
 
 ul li:hover{
     background-color: darkorange;
+    transition-duration: 0.5s;
 }
 
 .box2{
