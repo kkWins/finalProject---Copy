@@ -41,6 +41,11 @@ ul li{
     border-radius: 15px;
 }
 
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
 ul li:hover{
     background-color: darkorange;
     transition-duration: 0.5s;
