@@ -1,43 +1,65 @@
 <!DOCTYPE html>
-<html> 
-    <head> 
-        <link rel="stylesheet" href ="PackStyle.css">
-    </head>
-    <body>
-        
-            <div class="topbar">
-                 <div class="tabs">
-                    <a href="">Home</a>
-                    <a href="">Tour Packages</a>
-                    <a href="">Announcements</a>
-                    <a href="">Contact us</a>
-                </div>
-                </div>
-        
-            <div class = "content">
-                <div class="search">
-                    <h1>Search Bar</h1>
-                </div>
-                <div class = "Pack">
-                    <!--<div class="Categories">
-                        <h1>Categories</h1>
-                    </div> -->
-                    <div class = "List" id="container">
-                           
-                       
-                    </div>
+<html>
+  <head>
+    <script src="PackBase.js"></script>
+    <link rel="stylesheet" href="PackStyle.css">
+    <!-- <link rel="stylesheet" href="style1.css"> -->
+    <script src="https://kit.fontawesome.com/9d22335c50.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="updatePacks(packs)">
+    <div class="topbar">
+      <div class="logo"><img src="images/CEBTOURS LOGO2.svg" alt="" width="200px" height="150px"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="Package.html">Tour Packages</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+    </div>
 
-                </div>
-            </div>
-            <div class="bottombar">
-                <h1>BottomBar</h1>
+    <div class="content">
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Search" oninput="updateKeyword(this.value)"/>
+        <button onclick="performSearch()">Search</button>
+      </div>
+      <div class="Pack">
+        <div class="List" id="container"></div>
+      </div>
+    </div>
 
-            </div>
-
-    </body>
-    <script src="script.js">
-        
-
-
-    </script>
+    <!--Added by Gonz-->
+    <footer>
+      <div class="footer-container">
+          <div class="footer-content">
+              <h3>Follow Us</h3>
+              <ul class="social-icons">
+              <li><a href=""><i class="fab fa-facebook"></i></a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-content">
+              <h3>Quick Links</h3>
+              <ul class="list">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Products</a></li>
+                  <li><a href="">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-content">
+              <h3>Contact Us</h3>
+              <p>Email: test@test.com</p>
+              <p>Phone: 09654878484</p>
+              <p>Address: Kilid balay sa gwapo</p>
+          </div>
+      </div>
+      <div class="bottom-bar">
+          <p>&copy; 2024 CebTour. All rights reserved</p>
+      </div>
+      <!--Gonz End here-->
+  </body>
+  
 </html>
