@@ -217,6 +217,10 @@ h3 {
     position: relative;
 }
 
+.list li a{
+    color: white;
+}
+
 .list li::before{
     content: '';
     position: absolute;
